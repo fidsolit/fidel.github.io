@@ -12,7 +12,7 @@ const links = [
   { url: "/contact", title: "Contact" },
 ];
 
-const Navbar = (prop) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false);
   const listVariants = {
     closed: { y: "-100vw", opacity: 0 },
