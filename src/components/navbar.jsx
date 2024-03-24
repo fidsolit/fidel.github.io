@@ -12,7 +12,7 @@ const links = [
   { url: "/contact", title: "Contact" },
 ];
 
-const Navbar = () => {
+const Navbar = (prop) => {
   const [open, setOpen] = useState(false);
   const listVariants = {
     closed: { y: "-100vw", opacity: 0 },
@@ -154,12 +154,12 @@ const Navbar = () => {
             className="absolute top-0 left-0 w-screen h-screen z-40 bg-black text-white flex items-center flex-col justify-center gap-8 text-4xl"
           >
             {links.map((link) => (
-              <motion.div className="" variants={listItemVariants}>
-                <Link
-                  href={link.url}
-                  key={link.url}
-                  onClick={() => setOpen((prev) => !prev)}
-                >
+              <motion.div
+                key={link.url}
+                className=""
+                variants={listItemVariants}
+              >
+                <Link href={link.url} onClick={() => setOpen((prev) => !prev)}>
                   {link.title}
                 </Link>
               </motion.div>
