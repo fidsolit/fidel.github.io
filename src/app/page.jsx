@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 const Homepage = () => {
   return (
     <div className="h-full  flex flex-col lg:flex-row">
