@@ -6,11 +6,11 @@ const Homepage = () => {
   return (
     <motion.div
       className="h-full"
-      initial={{ y: "300vh" }}
+      initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
-      <div className="h-full  flex flex-col lg:flex-row">
+      <div className="h-full lg:w-fit  flex flex-col lg:flex-row">
         {/* {image conatainer} */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative ">
           <Image src="/hero.png" alt="" fill className="object-contain" />
