@@ -12,7 +12,7 @@ const Homepage = () => {
     >
       <div className="h-full lg:w-fit  flex flex-col lg:flex-row">
         {/* {image conatainer} */}
-        <div className="h-1/2 lg:h-full lg:w-1/2 relative ">
+        <div className="h-1/2 lg:h-full lg:w-1/2 relative  ">
           <Image src="/hero.png" alt="" fill className="object-contain" />
         </div>
         {/* {text container} */}
