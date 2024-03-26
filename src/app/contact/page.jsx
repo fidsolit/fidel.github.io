@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <motion.div
       className="h-full"
-      initial={{ y: "300vh" }}
+      initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 0.5 }}
     >
