@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { motion, useTransform } from "framer-motion";
 
-const Brain = ({ scrollYProgress }) => {
+const Windmill = ({ scrollYProgress }) => {
   const rotatesForward1 = useTransform(scrollYProgress, [0, 1], [0, 360]);
   const rotatesForward2 = useTransform(scrollYProgress, [0, 1], [0, 180]);
   const rotatesForward3 = useTransform(scrollYProgress, [0, 1], [0, 90]);
@@ -13,7 +13,7 @@ const Brain = ({ scrollYProgress }) => {
   const rotatesBackward4 = useTransform(scrollYProgress, [0, 1], [0, -45]);
   return (
     <div className="w-full h-full">
-      {/* <svg width="100%" height="100%">
+      <svg width="100%" height="100%">
         <defs>
           <path d="M.416.37V.366L.417.345V.37" id="path-1" />
           <path d="M.298 1.8v-.003a39.974 39.974 0 010 .002" id="path-3" />
@@ -1615,81 +1615,9 @@ const Brain = ({ scrollYProgress }) => {
             </g>
           </g>
         </g>
-      </svg> */}
-
-      <motion.svg
-        width="478"
-        height="636"
-        viewBox="0 0 478 636"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{ rotate: rotatesForward4 }}
-      >
-        <path
-          d="M176.151 258.775L158.118 635.189L203.186 634.2C203.913 536.691 206.183 452.1 196.289 261.495C196.031 256.536 184.914 264.658 176.151 258.775Z"
-          fill="url(#paint0_linear_0_4)"
-        />
-        <path
-          d="M197.886 258.734L424.715 247.939L470.411 244.74C470.411 244.74 478.213 244.872 477.903 242.446C477.593 240.02 470.486 240.467 470.486 240.467L428.782 237.871L320.688 231.315L245.239 231.182C245.239 231.182 193.406 235.582 196.165 239.757C198.924 243.933 203.189 249.579 197.886 258.734Z"
-          fill="url(#paint1_linear_0_4)"
-        />
-        <path
-          d="M186.061 235.442L63.8726 44.0323L38.368 5.98169C38.368 5.98169 34.6018 -0.852964 32.6515 0.622639C30.7013 2.09805 34.6241 8.04129 34.6241 8.04129L53.1151 45.5122L101.193 142.548L138.605 208.067C138.605 208.067 168.204 250.845 170.454 246.375C172.704 241.904 175.481 235.396 186.061 235.442Z"
-          fill="url(#paint2_linear_0_4)"
-        />
-        <path
-          d="M170.52 253.609L30.978 432.762L3.6445 469.521C3.6445 469.521 -1.53762 475.356 0.505122 476.7C2.54768 478.045 6.83731 472.361 6.83731 472.361L35.9694 442.406L111.346 364.652L160.586 307.486C160.586 307.486 191.006 265.288 186.041 264.662C181.075 264.037 174.013 263.596 170.52 253.609Z"
-          fill="url(#paint3_linear_0_4)"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_0_4"
-            x1="182.837"
-            y1="450.717"
-            x2="208.696"
-            y2="449.733"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#333333" />
-            <stop offset="1" stop-color="#1A1A1A" stop-opacity="0" />
-          </linearGradient>
-          <linearGradient
-            id="paint1_linear_0_4"
-            x1="321.967"
-            y1="242.557"
-            x2="321.574"
-            y2="229.278"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#333333" />
-            <stop offset="1" stop-color="#1A1A1A" stop-opacity="0" />
-          </linearGradient>
-          <linearGradient
-            id="paint2_linear_0_4"
-            x1="110.31"
-            y1="135.846"
-            x2="98.9857"
-            y2="142.792"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#333333" />
-            <stop offset="1" stop-color="#1A1A1A" stop-opacity="0" />
-          </linearGradient>
-          <linearGradient
-            id="paint3_linear_0_4"
-            x1="101.982"
-            y1="358.3"
-            x2="112.314"
-            y2="366.65"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#333333" />
-            <stop offset="1" stop-color="#1A1A1A" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-      </motion.svg>
+      </svg>
     </div>
   );
 };
 
-export default Brain;
+export default Windmill;
