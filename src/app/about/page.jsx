@@ -256,20 +256,21 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    FULL STACK DEVELOPER
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                    DEVELOPING WEBSITES USING HTML CSS JAVASCRIPT, REACT, REDUX
+                    , DESIGNING GRAPHICS USING PHOTOSHOP AND ADOBE ILLUSTRATOR,
+                    UI UX USING FIGMA{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                    2021 -2023 Present
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
+                    GLOBAL IMPACT
                   </div>
                 </div>
                 {/* CENTER */}
