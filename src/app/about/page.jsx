@@ -43,7 +43,7 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              I'm a dedicated and versatile web developer with over 7 years of
+              I am a dedicated and versatile web developer with over 7 years of
               experience in crafting dynamic and user-friendly websites and
               applications. With a strong foundation in HTML, CSS, JavaScript,
               and various frameworks such as React and NEXT.js, I excels in
@@ -57,8 +57,8 @@ const AboutPage = () => {
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              "Empowering businesses through elegant code and innovative
-              solutions, one line at a time."
+              Empowering businesses through elegant code and innovative
+              solutions, one line at a time.
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
@@ -352,7 +352,7 @@ const AboutPage = () => {
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
-          {/* <Brain scrollYProgress={scrollYProgress} /> */}
+          <Brain scrollYProgress={scrollYProgress} />
         </div>
         {/* <div className="lg:block w-1/3 sticky top-0 z-30 xl:w-1/2"> </div> */}
       </div>
