@@ -13,7 +13,7 @@ const About = () => {
       color: "from-red-300 to-blue-300",
       title: "Global Impact",
       description: "desc ",
-      img: "image link",
+      img: "gisupport home.png",
       link: "https://gisupport.org",
     },
 
@@ -22,7 +22,7 @@ const About = () => {
       color: "from-red-300 to-blue-300",
       title: "KAKKA DIARY BAR",
       description: "desc ",
-      img: "image link",
+      img: "KAKA.png",
       link: "https://kakkadairybar.000webhostapp.com/",
     },
   ];
@@ -43,12 +43,11 @@ const About = () => {
           className="md:justify-center md:items-center md:flex  shadow-sm w-screen h-auto "
         >
           <div className="card sm:w-auto bg-blue-100 shadow-xl m-3 max-sm:mx-2 w-full md:w-1/2 lg:w-1/4 h-auto rounded-md ease-in-out duration-300 md:hover:scale-110 p-3">
-            {" "}
             <figure>
-              <img src="/gisupport home.png" alt="sample project" />
+              <img src={data.img} alt="sample project" />
             </figure>
             <div className="card-body mx-2">
-              <h2 className="card-title font-bold">MAP DATA</h2>
+              <h2 className="card-title font-bold">{data.title}</h2>
 
               <p className="text-sm">
                 HTML, CSS, JAVASCRIPT, REACT JS, PHP with FACEBOOK API AND
