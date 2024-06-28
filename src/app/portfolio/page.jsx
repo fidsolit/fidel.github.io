@@ -1,9 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRef } from "react";
 const About = () => {
   const projects = { ProjectName: "", DadteAccomplish: "", Link: "" };
   const graphicDesign = { ProjectName: "", DadteAccomplish: "", Link: "" };
+  const useref = useRef();
 
   return (
     <motion.div
@@ -48,14 +50,14 @@ const About = () => {
             <img src="/gisupport home.png" alt="sample project" />
           </figure>
           <div className="card-body mx-2">
-            <h2 className="card-title font-bold">GISUPPORT WEBSITE</h2>
+            <h2 className="card-title font-bold">KAKKA DAIRY BAR</h2>
 
             <p className="text-sm">
               HTML, CSS, JAVASCRIPT, REACT JS, PHP with FACEBOOK API AND GOOGLE
               API
             </p>
             <div className="card-actions justify-end mx-2 md:flex md:justify-center md:items-center">
-              <Link href={`/productDetails/`}>
+              <Link href={`/porfoliodetails/`}>
                 <button className="outline-none cursor-pointer px-6 py-2 mt-5 mr-3 md:text-sm rounded bg-slate-900 text-white hover:bg-white hover:text-black rounded-sm ease-in-out duration-300 ">
                   See details
                 </button>
