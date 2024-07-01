@@ -37,12 +37,12 @@ const About = () => {
       <div className="glowPort">
         <h1 className="textProj"> PROJECTS</h1>
       </div>
-      {items.map((data) => (
-        <div
-          key={data.id}
-          className="md:justify-center md:items-center md:flex  shadow-sm w-screen h-auto "
-        >
-          <div className="card sm:w-auto bg-blue-100 shadow-xl m-3 max-sm:mx-2 w-full md:w-1/2 lg:w-1/4 h-auto rounded-md ease-in-out duration-300 md:hover:scale-110 p-3">
+      <div className="md:justify-center md:items-center md:flex  shadow-sm w-screen h-auto ">
+        {items.map((data) => (
+          <div
+            key={data.id}
+            className="card sm:w-auto bg-blue-100 shadow-xl m-3 max-sm:mx-2 md:w-1/2 lg:w-1/4 h-auto rounded-md ease-in-out duration-300 md:hover:scale-110 p-3"
+          >
             <figure>
               <img src={data.img} alt="sample project" />
             </figure>
@@ -67,8 +67,8 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
       <div className="glowPort">
         <h1 className="textProj"> Designs</h1>
       </div>
