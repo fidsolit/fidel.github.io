@@ -262,9 +262,9 @@ const AboutPage = () => {
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    DEVELOPING WEBSITES USING HTML CSS JAVASCRIPT, REACT, REDUX
-                    , DESIGNING GRAPHICS USING PHOTOSHOP AND ADOBE ILLUSTRATOR,
-                    UI UX USING FIGMA{" "}
+                    DEVELOPING WEBSITES USING HTML CSS JAVASCRIPT, REACT, REDUX,
+                    NEXT JS , DESIGNING GRAPHICS USING PHOTOSHOP AND ADOBE
+                    ILLUSTRATOR, UI UX USING FIGMA{" "}
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
