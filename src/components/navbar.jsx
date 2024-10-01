@@ -101,7 +101,7 @@ const Navbar = () => {
             height={24}
           ></Image>
         </Link>
-        <Link href="/">
+        <Link href="https://www.facebook.com/PARDILLONABLEFIDELITO">
           {" "}
           <Image
             src="/facebook.png"
@@ -110,11 +110,11 @@ const Navbar = () => {
             height={24}
           ></Image>
         </Link>
-        <Link href={"/"}>
+        <Link href={"https://github.com/fidsolit"}>
           {" "}
           <Image
-            href={"/"}
-            src="/instagram.png"
+            href={""}
+            src="/github.png"
             alt="github"
             width={24}
             height={24}
