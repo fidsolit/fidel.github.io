@@ -16,6 +16,8 @@
     "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
+    "@types/node": "22.7.6",
+    "@types/react": "18.3.11",
     "autoprefixer": "10.0.1",
     "eslint": "8",
     "eslint-config-next": "14.1.0",
