@@ -22,11 +22,20 @@ const About = () => {
     {
       id: 2,
       color: "from-red-300 to-blue-300",
-      title: "KAKKA DIARY BAR",
+      title: "KAKKA DAIRY BAR",
       description:
-        "HTML  CSS JAVASCRIPT REACT JS PHP with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
+        "HTML CSS JAVASCRIPT REACT JS PHP with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
       img: "KAKA.png",
       link: "https://kakkadairybar.000webhostapp.com/",
+    },
+    {
+      id: 2,
+      color: "from-red-300 to-blue-300",
+      title: "Outsourcingcx",
+      description:
+        "HTML CSS JAVASCRIPT NEXT JS  with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
+      img: "outsourcingcx.png",
+      link: "https://outsourcingcx.vercel.app/",
     },
   ];
 
@@ -60,70 +69,79 @@ const About = () => {
 
   return (
     <motion.div
-      className="h-full bgforPort"
+      className="h-full bg-gray-50"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 1 }}
     >
-      <div className="glowPort">
-        <h1 className="textProj"> PROJECTS</h1>
-      </div>
-      <div className="md:justify-center md:items-center md:flex shadow-sm w-screen h-auto">
-        {items.map((data) => (
-          <div
-            key={data.id}
-            className="card sm:w-auto bg-blue-100 shadow-xl m-3 max-sm:mx-2 md:w-1/2 lg:w-1/4 h-auto rounded-md ease-in-out duration-300 md:hover:scale-110 p-3"
-          >
-            <figure>
-              <img src={data.img} alt="sample project" />
-            </figure>
-            <div className="card-body mx-2">
-              <h2 className="card-title font-bold">{data.title}</h2>
-
-              <p className="text-sm">{data.description}</p>
-              <div className="card-actions justify-end mx-2 md:flex md:justify-center md:items-center">
-                <Link href={`/productDetails/`}>
-                  <button className="outline-none cursor-pointer px-6 py-2 mt-5 mr-3 md:text-sm rounded bg-slate-900 text-white hover:bg-white hover:text-black rounded-sm ease-in-out duration-300 ">
-                    See details
-                  </button>
-                </Link>
-                <Link href={data.link}>
-                  <button className="outline-none cursor-pointer px-6 py-2 mt-5 rounded bg-slate-900 text-white hover:bg-white hover:text-black rounded-sm ease-in-out duration-300 ">
-                    Goto live
-                  </button>
-                </Link>
+      {/* Projects Section */}
+      <div className="py-10">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+          Projects
+        </h1>
+        <div className="flex flex-wrap justify-center items-center gap-6 px-4">
+          {items.map((data) => (
+            <div
+              key={data.id}
+              className="card bg-gradient-to-r from-red-300 to-blue-300 shadow-lg rounded-lg p-4 transform hover:scale-105 transition-transform duration-300 w-80"
+            >
+              <figure>
+                <img
+                  src={data.img}
+                  alt="Sample project"
+                  className="rounded-t-lg object-cover w-full h-48"
+                />
+              </figure>
+              <div className="card-body p-4">
+                <h2 className="card-title font-bold text-lg text-gray-900">
+                  {data.title}
+                </h2>
+                <p className="text-sm text-gray-700 mt-2">{data.description}</p>
+                <div className="mt-4 flex gap-2 justify-center">
+                  <Link href={`/productDetails/`}>
+                    <button className="px-4 py-2 text-sm rounded bg-gray-900 text-white hover:bg-white hover:text-gray-900 border border-gray-900 transition-all">
+                      See Details
+                    </button>
+                  </Link>
+                  <Link href={data.link}>
+                    <button className="px-4 py-2 text-sm rounded bg-gray-900 text-white hover:bg-white hover:text-gray-900 border border-gray-900 transition-all">
+                      Go to Live
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
 
       {/* Design Carousel Section */}
-      <div className="glowPort">
-        <h1 className="textProj">Designs</h1>
+      <div className="py-10 bg-gray-100">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+          Designs
+        </h1>
+        <div className="max-w-4xl mx-auto">
+          <Carousel
+            showArrows={true}
+            showThumbs={false}
+            autoPlay={true}
+            infiniteLoop={true}
+            interval={3000}
+            className="rounded-lg overflow-hidden shadow-lg"
+          >
+            {designs.map((design) => (
+              <div key={design.id}>
+                <img
+                  src={design.img}
+                  alt={design.alt}
+                  className="h-96 w-full object-cover"
+                />
+                <p className="legend">{design.alt}</p>
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </div>
-      <div className="md:justify-center md:items-center md:flex shadow-sm w-screen h-auto">
-        <Carousel
-          showArrows={true}
-          showThumbs={false}
-          autoPlay={true}
-          infiniteLoop={true}
-          interval={3000}
-          className="w-full md:w-3/4 lg:w-1/2 mx-auto"
-        >
-          {designs.map((design) => (
-            <div key={design.id}>
-              <img
-                src={design.img}
-                alt={design.alt}
-                className="h-96 object-contain"
-              />
-              <p className="legend">{design.alt}</p>
-            </div>
-          ))}
-        </Carousel>
-      </div>
-      <div className="h-10"></div>
     </motion.div>
   );
 };
