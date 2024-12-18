@@ -21,10 +21,11 @@ const Contact = () => {
 
   return (
     <motion.div
-      className="h-full flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4"
+      className="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4"
       initial={{ y: "-200vh" }}
       animate={{ y: "0%" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
+      style={{ position: "relative", zIndex: 100 }} // Ensure clickable
     >
       <motion.form
         className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md"
@@ -32,6 +33,7 @@ const Contact = () => {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         onSubmit={handleSubmit}
+        style={{ zIndex: 10 }} // Ensure it's above other elements
       >
         <h3 className="text-2xl font-bold text-center mb-6">Contact Me</h3>
 
