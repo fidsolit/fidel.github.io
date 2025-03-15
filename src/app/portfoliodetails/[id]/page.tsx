@@ -72,7 +72,7 @@ const projects = [
       "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2370&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=2370&auto=format&fit=crop"
     ]
-  }
+  },
   {
     id: "4",
     title: "Global Impact sourcing",
