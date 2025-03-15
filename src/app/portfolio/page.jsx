@@ -43,7 +43,7 @@ const About = () => {
       title: "Global Impact outsourcing",
       description:
         "HTML CSS JAVASCRIPT NEXT JS  with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
-      img: "outsourcingcx.png",
+      img: "Global Impact Sourcing.png",
       link: "https://globalimpactsourcing.com/",
     },
   ];
