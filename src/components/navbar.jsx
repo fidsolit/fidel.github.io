@@ -83,7 +83,7 @@ const Navbar = () => {
           href={"/"}
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center "
         >
-          <span className="text-white  mr-1">AF</span>
+          <span className="text-white  mr-1">F</span>
           <span className=" w-14 h-8 rounded bg-white  text-black flex items-center justify-center">
             CODES
           </span>
