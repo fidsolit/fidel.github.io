@@ -91,16 +91,7 @@ const Navbar = () => {
       </div>
       {/* social media */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href={"/"}>
-          {/* <Image src="/github.png" alt="github" width={24}></Image> */}
-          <Image
-            href={"/"}
-            src="/dribble.png"
-            alt="github"
-            width={24}
-            height={24}
-          ></Image>
-        </Link>
+       
         <Link href="https://www.facebook.com/PARDILLONABLEFIDELITO">
           {" "}
           <Image
