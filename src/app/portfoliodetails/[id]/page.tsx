@@ -73,6 +73,29 @@ const projects = [
       "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=2370&auto=format&fit=crop"
     ]
   }
+  {
+    id: "4",
+    title: "Global Impact sourcing",
+    description: "HTML CSS JAVASCRIPT NEXT JS with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
+    fullDescription: "A next-generation outsourcing platform built with Next.js, offering seamless connectivity between businesses and service providers.",
+    img: "outsourcingcx.png",
+    link: "https://globalimpactsourcing.com/",
+    technologies: ["Next.js", "Tailwind CSS", "shadcn/ui", "Daisy UI", "Facebook API", "Google API"],
+    features: [
+      "Real-time messaging",
+      "Project management",
+      "Service provider matching",
+      "Analytics dashboard",
+      "Automated workflows"
+    ],
+    challenges: "Implementing real-time features and ensuring smooth communication between different parts of the application while maintaining high performance.",
+    screenshots: [
+      "https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=2370&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=2370&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?q=80&w=2370&auto=format&fit=crop"
+    ]
+  }
+  
 ];
 
 export default function PortfolioDetails() {

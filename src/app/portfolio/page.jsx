@@ -29,13 +29,22 @@ const About = () => {
       link: "https://kakkadairybar.000webhostapp.com/",
     },
     {
-      id: 2,
+      id: 3,
       color: "from-red-300 to-blue-300",
       title: "Outsourcingcx",
       description:
         "HTML CSS JAVASCRIPT NEXT JS  with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
       img: "outsourcingcx.png",
       link: "https://outsourcingcx.vercel.app/",
+    },
+    {
+      id: 4,
+      color: "from-red-300 to-blue-300",
+      title: "Global Impact outsourcing",
+      description:
+        "HTML CSS JAVASCRIPT NEXT JS  with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
+      img: "outsourcingcx.png",
+      link: "https://globalimpactsourcing.com/",
     },
   ];
 
