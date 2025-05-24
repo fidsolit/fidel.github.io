@@ -83,7 +83,7 @@ const Navbar = () => {
           href={"/"}
           className="text-sm bg-black rounded-md p-1 font-semibold flex items-center justify-center "
         >
-          <span className="text-white  mr-1">AF</span>
+          <span className="text-white  mr-1">F</span>
           <span className=" w-14 h-8 rounded bg-white  text-black flex items-center justify-center">
             CODES
           </span>
@@ -91,16 +91,7 @@ const Navbar = () => {
       </div>
       {/* social media */}
       <div className="hidden md:flex gap-4 w-1/3">
-        <Link href={"/"}>
-          {/* <Image src="/github.png" alt="github" width={24}></Image> */}
-          <Image
-            href={"/"}
-            src="/dribble.png"
-            alt="github"
-            width={24}
-            height={24}
-          ></Image>
-        </Link>
+       
         <Link href="https://www.facebook.com/PARDILLONABLEFIDELITO">
           {" "}
           <Image

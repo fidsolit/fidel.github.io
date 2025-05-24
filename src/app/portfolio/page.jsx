@@ -29,13 +29,22 @@ const About = () => {
       link: "https://kakkadairybar.000webhostapp.com/",
     },
     {
-      id: 2,
+      id: 3,
       color: "from-red-300 to-blue-300",
       title: "Outsourcingcx",
       description:
         "HTML CSS JAVASCRIPT NEXT JS  with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
       img: "outsourcingcx.png",
       link: "https://outsourcingcx.vercel.app/",
+    },
+    {
+      id: 4,
+      color: "from-red-300 to-blue-300",
+      title: "Global Impact outsourcing",
+      description:
+        "HTML CSS JAVASCRIPT NEXT JS  with FACEBOOK API AND GOOGLE API CHADCN and DAISY UI",
+      img: "Global Impact Sourcing.png",
+      link: "https://globalimpactsourcing.com/",
     },
   ];
 
@@ -115,7 +124,7 @@ const About = () => {
                 </h2>
                 <p className="text-sm text-gray-700 mt-2">{data.description}</p>
                 <div className="mt-4 flex gap-2 justify-center">
-                  <Link href={`/productDetails/`}>
+                  <Link href={`/portfoliodetails/${data.id}`}>
                     <button className="px-4 py-2 text-sm rounded bg-gray-900 text-white hover:bg-white hover:text-gray-900 border border-gray-900 transition-all">
                       See Details
                     </button>
