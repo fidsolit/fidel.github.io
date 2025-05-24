@@ -66,6 +66,23 @@ const About = () => {
       alt: "Design 5",
     },
   ];
+  const videoEdits = [
+    {
+      id: 1,
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      alt: "Design 1",
+    },
+    {
+      id: 2,
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      alt: "Design 2",
+    },
+    {
+      id: 3,
+      link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      alt: "Design 3",
+    },
+  ];
 
   return (
     <motion.div
@@ -134,6 +151,32 @@ const About = () => {
                 <img
                   src={design.img}
                   alt={design.alt}
+                  className="h-96 w-full object-cover"
+                />
+                <p className="legend">{design.alt}</p>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </div>
+      <div className="py-10 bg-gray-100">
+        <h1 className="text-4xl font-bold text-center text-gray-800 mb-8">
+          Video Edits
+        </h1>
+        <div className="max-w-4xl mx-auto">
+          <Carousel
+            showArrows={true}
+            showThumbs={false}
+            autoPlay={true}
+            infiniteLoop={true}
+            interval={3000}
+            className="rounded-lg overflow-hidden shadow-lg"
+          >
+            {videoEdits.map((design) => (
+              <div key={videoEdits.id}>
+                <video
+                  src={videoEdits.link}
+                  alt={videoEdits.alt}
                   className="h-96 w-full object-cover"
                 />
                 <p className="legend">{design.alt}</p>
